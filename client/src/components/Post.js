@@ -4,28 +4,16 @@ import { IoMdMore } from "react-icons/io";
 import { AiOutlineLike } from "react-icons/ai";
 import { FaRegComment } from "react-icons/fa";
 import { FaRegShareSquare } from "react-icons/fa";
+import { AiFillLike } from "react-icons/ai";
+import { usePostGet } from "../function/PostGet";
 
 function Post() {
-  const [apiData, setApiData] = useState(null);
+  const apiData = usePostGet();
 
-  useEffect(() => {
-    axios
-      .get(
-        window.location.hostname === "localhost"
-          ? "http://localhost:5000/api/hello"
-          : "https://media-blog-backend.up.railway.app/api/hello"
-      )
-      .then((response) => {
-        setApiData(response.data); // Store API data in state
-      })
-      .catch((error) => {
-        console.error("API Error:", error);
-      });
-  }, []);
   return (
     <div className="flex flex-col items-center gap-10">
       {apiData &&
-        apiData.map((item) => (
+        apiData.data.map((item) => (
           <div
             className="sm:size-5/12 relative size-11/12 px-4 pt-4 border rounded-lg shadow-md"
             key={item._id}
@@ -46,7 +34,7 @@ function Post() {
             </div>
             <p className="text-gray-800">{item.description}</p>
 
-            <div className="w-full mt-4 bg-blue-500">
+            <div className="w-full mt-4 bg-blue-500 mb-3">
               {item.video &&
               (item.video.endsWith("png") || item.video.endsWith("jpg")) ? (
                 <img
@@ -66,7 +54,10 @@ function Post() {
                 )
               )}
             </div>
-            <div className="flex justify-evenly py-3">
+            <div className="flex items-center gap-2 pb-3">
+              <AiFillLike className="text-blue-500" /> {item.likes}
+            </div>
+            <div className="flex justify-evenly py-3 border-t-2 border-gray-200">
               <button className="w-full text-gray-500 hover:text-blue-500 py-2 hover:bg-gray-200 rounded-md flex justify-center items-center gap-2">
                 <AiOutlineLike />
                 Like

@@ -12,6 +12,7 @@ const data = [
     description: "My new baby is out now. link in bio 💿✨",
     timestamp: "3d",
     video: "https://www.youtube.com/embed/x1XIJM6spaE",
+    likes: "100k",
   },
   {
     _id: 2,
@@ -23,6 +24,7 @@ const data = [
     timestamp: "18h",
     video:
       "https://drive.google.com/file/d/1972Y7PuHqBRzX8_wxYqbA6YcgKG-2DV6/preview",
+    likes: "39",
   },
   {
     _id: 3,
@@ -33,6 +35,7 @@ const data = [
       "Minimal. Responsive. Personal. Check out the portfolio I coded from scratch using React.",
     timestamp: "1h",
     video: "https://i.ytimg.com/vi/g0HKvRj84Ak/hq720.jpg",
+    likes: "28k",
   },
   {
     _id: 4,
@@ -43,6 +46,7 @@ const data = [
     timestamp: "2w",
     video:
       "https://images.pexels.com/photos/7000565/pexels-photo-7000565.jpeg?cs=srgb&dl=pexels-marian-sol-miranda-32246321-7000565.jpg&fm=jpg",
+    likes: "182",
   },
   {
     _id: 5,
@@ -54,8 +58,37 @@ const data = [
     timestamp: "3w",
     video:
       "https://png.pngtree.com/background/20250106/original/pngtree-nice-picsart-cb-backgrounds-hd-phone-wallpaper-picture-image_15522905.jpg",
+    likes: "1k",
   },
 ];
+
+const personal = {
+  user_id: "Shoon@Yadanar.24",
+  name: "Shoon Yadanar",
+  profile: "Images/Image3.jpg",
+  friends: [
+    {
+      id: 1,
+      name: "Ariana Grande",
+      profile: "Images/Image3.jpg",
+    },
+    {
+      id: 2,
+      name: "Emma Watson",
+      profile: "Images/Image1.jpg",
+    },
+    {
+      id: 3,
+      name: "React Coder",
+      profile: "Images/Image4.jpg",
+    },
+    {
+      id: 4,
+      name: "Selena Lopez",
+      profile: "Images/Image2.jpg",
+    },
+  ],
+};
 
 app.use(cors());
 app.use(express.json());
@@ -65,7 +98,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/api/hello", (req, res) => {
-  res.json(data);
+  res.json({ data, personal });
 });
 
 app.listen(PORT, () => {
