@@ -33,7 +33,7 @@ function Post() {
               <img
                 className="size-12 rounded-full"
                 src={item.profile}
-                alt={item.name}
+                alt={item.name || "User profile"}
               />
               <div className="flex flex-col">
                 <h2 className="text-md">{item.name}</h2>
@@ -45,7 +45,11 @@ function Post() {
             <div className="w-full mt-4 bg-blue-500">
               {item.video &&
               (item.video.endsWith("png") || item.video.endsWith("jpg")) ? (
-                <img src={item.video} className="w-full" alt="Image" />
+                <img
+                  src={item.video}
+                  className="w-full"
+                  alt={item.name ? `${item.name}'s post image` : "Post image"}
+                />
               ) : (
                 item.video && (
                   <iframe
