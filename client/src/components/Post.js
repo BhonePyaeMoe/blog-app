@@ -45,7 +45,7 @@ function Post() {
             <div className="w-full mt-4 bg-blue-500">
               {item.video &&
               (item.video.endsWith("png") || item.video.endsWith("jpg")) ? (
-                <img src={item.video} className="w-full" />
+                <img src={item.video} className="w-full" alt="Image" />
               ) : (
                 item.video && (
                   <iframe
