@@ -1,16 +1,8 @@
+import React from "react";
 import ReactDOM from "react-dom/client";
+import { RouterProvider } from "react-router-dom";
 import "./index.css";
-import App from "./components/App";
-import Nav from "./components/Nav";
-
-function Main() {
-  return (
-    <>
-      <Nav />
-      <App />
-    </>
-  );
-}
+import router from "./router/route";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Main />);
+root.render(<RouterProvider router={router} />);
