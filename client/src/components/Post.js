@@ -13,7 +13,7 @@ function Post() {
       .get(
         window.location.hostname === "localhost"
           ? "http://localhost:5000/api/hello"
-          : "https://media-blog-backend.up.railway.app:8080/api/hello"
+          : "https://media-blog-backend.up.railway.app/api/hello"
       )
       .then((response) => {
         setApiData(response.data); // Store API data in state
