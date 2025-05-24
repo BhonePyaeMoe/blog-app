@@ -8,6 +8,14 @@ import { NavLink } from "react-router-dom";
 function Nav() {
   return (
     <div className="sticky top-0 flex justify-center border-b-2 border-gray-200 bg-white gap-1 z-10">
+      <div className="flex fixed left-3">
+        <img src="./Images/Logo.png" className="size-14"></img>
+        <input
+          type="text"
+          placeholder="Search Blog"
+          className="w-80 ml-3 m-2 px-4 py-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+        />
+      </div>
       <NavLink
         to="/"
         className="text-3xl py-3 px-14 hover:text-blue-500 border-b-2 border-white"

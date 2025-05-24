@@ -4,10 +4,10 @@ import { usePostGet } from "../function/PostGet";
 function Status() {
   const apiData = usePostGet();
   return (
-    <div className="fixed min-w-96 top-16 right-0 p-3 h-full">
-      <div className="flex flex-col gap-10 mb-1">
+    <div className="fixed min-w-96 top-14 right-0 p-3 h-full border-l-2 border-gray-200">
+      <div className="flex flex-col gap-10 mt-1">
         {apiData && (
-          <div className="flex items-center gap-4 mb-4 px-2">
+          <div className="flex items-center gap-4 mb-3 p-2 hover:bg-gray-200">
             <img
               className="size-12 rounded-full"
               src={apiData.personal.profile}
@@ -22,7 +22,7 @@ function Status() {
           </div>
         )}
       </div>
-      <div className="flex flex-col py-4 border-t-2 border-gray-200 gap-2">
+      <div className="flex flex-col py-4 border-t-2 border-gray-200 gap-2 overflow-y-auto h-screen scrollbarhide">
         <h2 className="text-lg font-bold tracking-wide">Friends</h2>
         {apiData &&
           apiData.personal.friends.map((friend) => (

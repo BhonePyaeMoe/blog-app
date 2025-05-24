@@ -6,3 +6,6 @@
   @apply text-blue-500 border-b-2 border-blue-500;
   border-radius: 0;
 }
+.scrollbarhide::-webkit-scrollbar {
+  display: none;
+}

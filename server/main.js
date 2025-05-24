@@ -87,6 +87,86 @@ const personal = {
       name: "Selena Lopez",
       profile: "Images/Image2.jpg",
     },
+    {
+      id: 5,
+      name: "David",
+      profile: "Images/Image1.jpg",
+    },
+    {
+      id: 6,
+      name: "Jane",
+      profile: "Images/Image3.jpg",
+    },
+    {
+      id: 7,
+      name: "David",
+      profile: "Images/Image1.jpg",
+    },
+    {
+      id: 8,
+      name: "Jane Lane",
+      profile: "Images/Image3.jpg",
+    },
+    {
+      id: 9,
+      name: "David Smith",
+      profile: "Images/Image1.jpg",
+    },
+    {
+      id: 10,
+      name: "Jane Roe",
+      profile: "Images/Image3.jpg",
+    },
+    {
+      id: 11,
+      name: "David Wilson",
+      profile: "Images/Image1.jpg",
+    },
+    {
+      id: 12,
+      name: "Jane Foster",
+      profile: "Images/Image3.jpg",
+    },
+    {
+      id: 13,
+      name: "David Miller",
+      profile: "Images/Image1.jpg",
+    },
+    {
+      id: 14,
+      name: "Jane Doe",
+      profile: "Images/Image3.jpg",
+    },
+    {
+      id: 15,
+      name: "David Blaine",
+      profile: "Images/Image1.jpg",
+    },
+    {
+      id: 16,
+      name: "Jane Carter",
+      profile: "Images/Image3.jpg",
+    },
+    {
+      id: 17,
+      name: "David Beckham",
+      profile: "Images/Image1.jpg",
+    },
+    {
+      id: 18,
+      name: "Jane Doe",
+      profile: "Images/Image3.jpg",
+    },
+    {
+      id: 19,
+      name: "David Blaine",
+      profile: "Images/Image1.jpg",
+    },
+    {
+      id: 20,
+      name: "Jane Smith",
+      profile: "Images/Image3.jpg",
+    },
   ],
 };
 

@@ -53,7 +53,7 @@ function Post() {
               )}
             </div>
             <div className="flex items-center gap-2 pb-3">
-              <AiFillLike className="text-blue-500" /> {item.likes}
+              <AiFillLike className="text-blue-500 text-xl" /> {item.likes}
             </div>
             <div className="flex justify-evenly py-3 border-t-2 border-gray-200">
               <button className="w-full text-gray-500 hover:text-blue-500 py-2 hover:bg-gray-200 rounded-md flex justify-center items-center gap-2">
