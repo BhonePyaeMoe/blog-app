@@ -6,28 +6,6 @@ const PORT = process.env.PORT || 5000;
 const data = [
   {
     _id: 1,
-    name: "Ariana Grande",
-    profile: "Images/Image3.jpg",
-    topic: "React",
-    description: "My new baby is out now. link in bio 💿✨",
-    timestamp: "3d",
-    video: "https://www.youtube.com/embed/x1XIJM6spaE",
-    likes: "100k",
-  },
-  {
-    _id: 2,
-    name: "David",
-    profile: "Images/Image1.jpg",
-    topic: "Node.js",
-    description:
-      "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.",
-    timestamp: "18h",
-    video:
-      "https://drive.google.com/file/d/1972Y7PuHqBRzX8_wxYqbA6YcgKG-2DV6/preview",
-    likes: "39",
-  },
-  {
-    _id: 3,
     name: "React Coder",
     profile: "Images/Image4.jpg",
     topic: "Express",
@@ -38,6 +16,28 @@ const data = [
     likes: "28k",
   },
   {
+    _id: 2,
+    name: "React Coder",
+    profile: "Images/Image4.jpg",
+    topic: "Express.js",
+    description:
+      "Express.js is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.",
+    timestamp: "1w",
+    video:
+      "https://www.pix-star.com/blog/wp-content/uploads/2021/05/digital-photo-frames.jpg",
+    likes: "2k",
+  },
+  {
+    _id: 3,
+    name: "Ariana Grande",
+    profile: "Images/Image3.jpg",
+    topic: "React",
+    description: "My new baby is out now. link in bio 💿✨",
+    timestamp: "3d",
+    video: "https://www.youtube.com/embed/x1XIJM6spaE",
+    likes: "2.1M",
+  },
+  {
     _id: 4,
     name: "Selena",
     profile: "Images/Image2.jpg",
@@ -46,10 +46,22 @@ const data = [
     timestamp: "2w",
     video:
       "https://images.pexels.com/photos/7000565/pexels-photo-7000565.jpeg?cs=srgb&dl=pexels-marian-sol-miranda-32246321-7000565.jpg&fm=jpg",
-    likes: "182",
+    likes: "305",
   },
   {
     _id: 5,
+    name: "David",
+    profile: "Images/Image1.jpg",
+    topic: "Node.js",
+    description:
+      "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.",
+    timestamp: "18h",
+    video:
+      "https://drive.google.com/file/d/1972Y7PuHqBRzX8_wxYqbA6YcgKG-2DV6/preview",
+    likes: "101",
+  },
+  {
+    _id: 6,
     name: "Jane",
     profile: "Images/Image1.jpg",
     topic: "JavaScript",
@@ -60,12 +72,24 @@ const data = [
       "https://png.pngtree.com/background/20250106/original/pngtree-nice-picsart-cb-backgrounds-hd-phone-wallpaper-picture-image_15522905.jpg",
     likes: "1k",
   },
+  {
+    _id: 7,
+    name: "Emma Watson",
+    profile: "Images/Image1.jpg",
+    topic: "CSS",
+    description:
+      "CSS is a style sheet language used for describing the presentation of a document written in HTML or XML.",
+    timestamp: "2d",
+    video: "https://www.youtube.com/embed/x3_liLDfUkQ?list=RDx3_liLDfUkQ",
+    likes: "29",
+  },
 ];
 
 const personal = {
   user_id: "Shoon@Yadanar.24",
   name: "Shoon Yadanar",
-  profile: "Images/Image3.jpg",
+  profile:
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQwVqGzvqgr9af4mEDCTcqbowNem1fIBoYoQ&s",
   friends: [
     {
       id: 1,
@@ -74,8 +98,9 @@ const personal = {
     },
     {
       id: 2,
-      name: "Emma Watson",
-      profile: "Images/Image1.jpg",
+      name: "Natalie Portman",
+      profile:
+        "https://png.pngtree.com/png-clipart/20241231/original/pngtree-cute-profile-picture-girl-png-image_18421685.png",
     },
     {
       id: 3,
@@ -89,8 +114,9 @@ const personal = {
     },
     {
       id: 5,
-      name: "David",
-      profile: "Images/Image1.jpg",
+      name: "David Rose",
+      profile:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH4YoIeQOqbxCJSghBokeC9fgkFYncTnX9LIVUi7JRWJ1qXjQnZLTABjjNcquEbpjj8YA&usqp=CAU",
     },
     {
       id: 6,

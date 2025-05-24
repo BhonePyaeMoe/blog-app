@@ -1,9 +1,9 @@
+import Reel from "../Video/Reel";
 function Video() {
   return (
     <>
-      <div className="flex flex-col items-center justify-center h-screen">
-        <h1 className="text-2xl font-bold mb-4">Video Page</h1>
-        <p className="text-lg">This is the video page.</p>
+      <div className="p-3 min-h-screen bg-gray-100 w-full relative">
+        <Reel />
       </div>
     </>
   );
