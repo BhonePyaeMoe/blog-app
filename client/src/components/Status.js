@@ -4,7 +4,7 @@ import { usePostGet } from "../function/PostGet";
 function Status() {
   const apiData = usePostGet();
   return (
-    <div className="fixed min-w-96 top-14 right-0 p-3 h-full border-l-2 border-gray-200">
+    <div className="hidden sm:block fixed sm:min-w-96 sm:top-14 sm:right-0 sm:p-3 sm:h-full sm:border-l-2 sm:border-gray-200">
       <div className="flex flex-col gap-10 mt-1">
         {apiData && (
           <div className="flex items-center gap-4 mb-3 p-2 hover:bg-gray-200">

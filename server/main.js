@@ -50,14 +50,12 @@ const data = [
   },
   {
     _id: 5,
-    name: "David",
-    profile: "Images/Image1.jpg",
+    name: "Ei Hsu May Zaw",
+    profile: "Images/Image5.jpg",
     topic: "Node.js",
-    description:
-      "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.",
+    description: "7th Monthsary with my Uno. I love you so much, my love. 💖",
     timestamp: "18h",
-    video:
-      "https://drive.google.com/file/d/1972Y7PuHqBRzX8_wxYqbA6YcgKG-2DV6/preview",
+    video: "./Images/1748107076930.jpg",
     likes: "101",
   },
   {
@@ -69,7 +67,7 @@ const data = [
       "JavaScript is a programming language that conforms to the ECMAScript specification.",
     timestamp: "3w",
     video:
-      "https://png.pngtree.com/background/20250106/original/pngtree-nice-picsart-cb-backgrounds-hd-phone-wallpaper-picture-image_15522905.jpg",
+      "https://drive.google.com/file/d/13DVcFQv-l51TntmjHohg1qRaIU-ZZvmD/preview",
     likes: "1k",
   },
   {
@@ -86,10 +84,9 @@ const data = [
 ];
 
 const personal = {
-  user_id: "Shoon@Yadanar.24",
-  name: "Shoon Yadanar",
-  profile:
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQwVqGzvqgr9af4mEDCTcqbowNem1fIBoYoQ&s",
+  user_id: "Rain@2005",
+  name: "Ei Hsu May Zaw",
+  profile: "./Images/Image5.jpg",
   friends: [
     {
       id: 1,
