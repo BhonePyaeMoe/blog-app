@@ -9,7 +9,7 @@ function Nav() {
   return (
     <div className="sticky top-0 flex justify-center border-b-2 border-gray-200 bg-white gap-1 z-10">
       <div className="flex fixed left-3">
-        <img src="./Images/Logo.png" className="size-14"></img>
+        <img src="./Images/Logo.png" className="size-14" alt="Logo"></img>
         <input
           type="text"
           placeholder="Search Blog"
