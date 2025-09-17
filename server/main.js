@@ -2,7 +2,20 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
+
 const PORT = process.env.PORT || 5000;
+const mongourl =
+  "mongodb+srv://moegyi2442:Peter2442@blog.zjobhiv.mongodb.net/?retryWrites=true&w=majority&appName=Blog";
+const mongoose = require("mongoose");
+
+mongoose
+  .connect(mongourl)
+  .then(() => {
+    console.log("Connected to MongoDB");
+  })
+  .catch((err) => {
+    console.error("Error connecting to MongoDB:", err);
+  });
 const data = [
   {
     _id: 1,
@@ -96,8 +109,7 @@ const personal = {
     {
       id: 2,
       name: "Natalie Portman",
-      profile:
-        "https://png.pngtree.com/png-clipart/20241231/original/pngtree-cute-profile-picture-girl-png-image_18421685.png",
+      profile: "Images/Image3.jpg",
     },
     {
       id: 3,
@@ -112,8 +124,7 @@ const personal = {
     {
       id: 5,
       name: "David Rose",
-      profile:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH4YoIeQOqbxCJSghBokeC9fgkFYncTnX9LIVUi7JRWJ1qXjQnZLTABjjNcquEbpjj8YA&usqp=CAU",
+      profile: "Images/Image3.jpg",
     },
     {
       id: 6,
@@ -193,6 +204,20 @@ const personal = {
   ],
 };
 
+const notification = [
+  {
+    id: 1,
+    message: "Your post has received a new like!",
+    timestamp: "2h ago",
+    read: false,
+  },
+  {
+    id: 2,
+    message: "You have a new follower: JohnDoe",
+    timestamp: "5h ago",
+  },
+];
+
 app.use(cors());
 app.use(express.json());
 
@@ -201,7 +226,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/api/hello", (req, res) => {
-  res.json({ data, personal });
+  res.json({ data, personal, notification });
 });
 
 app.listen(PORT, () => {

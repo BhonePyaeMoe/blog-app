@@ -23,12 +23,6 @@ function Nav() {
         <IoHomeOutline />
       </NavLink>
       <NavLink
-        to="/Video"
-        className="text-3xl py-3 px-14 hover:text-blue-500 border-b-2 border-white"
-      >
-        <MdOutlineSlowMotionVideo />
-      </NavLink>
-      <NavLink
         to="/Community"
         className="text-3xl py-3 px-14 hover:text-blue-500 border-b-2 border-white"
       >
