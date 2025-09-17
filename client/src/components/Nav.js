@@ -1,5 +1,4 @@
 import { IoHomeOutline } from "react-icons/io5";
-import { MdOutlineSlowMotionVideo } from "react-icons/md";
 import { GoOrganization } from "react-icons/go";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { IoSettingsOutline } from "react-icons/io5";
