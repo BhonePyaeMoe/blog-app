@@ -207,7 +207,7 @@ const personal = {
 const notification = [
   {
     id: 1,
-    message: "Your post has received a new like!",
+    message: "Emma Watson liked your post.",
     timestamp: "2h ago",
     read: false,
   },
@@ -215,6 +215,41 @@ const notification = [
     id: 2,
     message: "You have a new follower: JohnDoe",
     timestamp: "5h ago",
+  },
+];
+
+const friendlist = [
+  {
+    id: 1,
+    name: "Ariana Grande",
+    profile: "Images/Image3.jpg",
+    mutualFriends: 10,
+    status: "Online",
+    isfriend: true,
+  },
+  {
+    id: 2,
+    name: "Natalie Portman",
+    profile: "Images/Image3.jpg",
+    mutualFriends: 5,
+    status: "Offline",
+    isfriend: false,
+  },
+  {
+    id: 3,
+    name: "React Coder",
+    profile: "Images/Image4.jpg",
+    mutualFriends: 3,
+    status: "Online",
+    isfriend: true,
+  },
+  {
+    id: 4,
+    name: "Selena Lopez",
+    profile: "Images/Image2.jpg",
+    mutualFriends: 2,
+    status: "Offline",
+    isfriend: false,
   },
 ];
 
@@ -226,7 +261,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/api/hello", (req, res) => {
-  res.json({ data, personal, notification });
+  res.json({ data, personal, notification, friendlist });
 });
 
 app.listen(PORT, () => {

@@ -4,6 +4,7 @@ import App from "../Pages/App"; // Home page content
 import Notification from "../Pages/Notification"; // /notification
 import Community from "../Pages/Community"; // /profile
 import Setting from "../Pages/Setting"; // /explore
+import Friends from "../Pages/Friends"; // /friends
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
       {
         index: true, // renders at "/"
         element: <App />,
+      },
+      {
+        path: "Friends",
+        element: <Friends />,
       },
       {
         path: "Notification",

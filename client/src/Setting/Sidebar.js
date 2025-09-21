@@ -10,8 +10,8 @@ import { FiLogOut } from "react-icons/fi";
 function Sidebar() {
   return (
     <>
-      <div className="fixed min-w-[400px] top-14 left-0 p-3 h-full border-r-2 border-gray-200">
-        <div className="flex flex-col gap-3 mt-1">
+      <div className="fixed min-w-[370px] top-14 left-0 p-3 h-full border-r-2 border-gray-200">
+        <div className="flex flex-col gap-2 mt-1">
           <h2 className="text-lg font-bold pl-3 tracking-wide">Settings</h2>
           <div className="flex items-center gap-4 p-3 py-4 hover:bg-gray-200">
             <CgProfile className="text-2xl" />

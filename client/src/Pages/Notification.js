@@ -9,8 +9,8 @@ function Notification() {
   return (
     <>
       <div className="flex flex-col items-center h-screen">
-        <div className="w-2/5 mt-10 border rounded-lg shadow-md p-4">
-          <h1 className="text-2xl font-bold">Notifications</h1>
+        <div className="w-2/5 mt-7 border rounded-lg shadow-md p-4">
+          <h1 className="text-2xl font-bold pb-3">Notifications</h1>
           <div className="w-full flex gap-5 py-4">
             <span
               className={`py-2 px-4 rounded-full cursor-pointer ${
@@ -31,14 +31,17 @@ function Notification() {
           </div>
           {apiData &&
             apiData.notification.map((item) => (
-              <div className="w-full" key={item._id}>
-                <div className="flex items-start align-center gap-4 py-3">
+              <div
+                className="w-full hover:bg-gray-200 rounded-lg px-3 cursor-pointer"
+                key={item._id}
+              >
+                <div className="flex items-startd align-center gap-4 py-3">
                   <img
-                    className="size-12 rounded-full"
+                    className="size-16 rounded-full"
                     src={item.profile || "Images/Image3.jpg"}
                     alt={item.name || "User profile"}
                   />
-                  <p> {item.message} </p>
+                  <p className="text-md pt-2"> {item.message} </p>
                 </div>
               </div>
             ))}

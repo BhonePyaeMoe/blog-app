@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.2px;
+}
 .active {
   @apply text-blue-500 border-b-2 border-blue-500;
   border-radius: 0;
